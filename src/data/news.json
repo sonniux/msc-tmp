@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "title": "Nuevo álbum de Artista X rompe récords",
+    "summary": "El último lanzamiento de Artista X alcanzó 2M de streams en 24 horas."
+  },
+  {
+    "id": 2,
+    "title": "Festival Y confirma cartelera",
+    "summary": "El Festival Y contará con más de 50 artistas internacionales."
+  },
+  {
+    "id": 3,
+    "title": "Artista Z anuncia gira mundial",
+    "summary": "La gira recorrerá 20 países en 2026."
+  },
+  {
+    "id": 4,
+    "title": "Nuevas tendencias en la música electrónica",
+    "summary": "Los DJs están explorando fusiones con ritmos latinos."
+  }
+]

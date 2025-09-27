@@ -1,8 +1,12 @@
+import { getNews } from "@/lib/getNews";
+
 export default function Block1() {
+  const news = getNews()[0]; // primera noticia
+
   return (
     <div style={{ background: "#f4f4f4", padding: "1rem" }}>
-      <h3>Bloque 1</h3>
-      <p>Espacio para estadísticas o noticias.</p>
+      <h3>{news.title}</h3>
+      <p>{news.summary}</p>
     </div>
   );
 }
