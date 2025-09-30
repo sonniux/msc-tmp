@@ -1,10 +1,9 @@
-// src/components/HeaderMenu.tsx
 export default function HeaderMenu() {
   return (
-    <nav className="absolute top-4 right-4 bg-gray-800 text-white px-4 py-2 rounded-lg shadow-lg">
-      <ul className="flex gap-4">
-        <li><a href="#" className="hover:underline">Inicio</a></li>
-        <li><a href="#" className="hover:underline">Explorar</a></li>
+    <nav className="absolute top-4 right-4 bg-brand-dark text-white px-5 py-3 rounded-full shadow-md">
+      <ul className="flex gap-6 font-semibold">
+        <li><a href="#" className="hover:text-brand-light transition">Inicio</a></li>
+        <li><a href="#" className="hover:text-brand-light transition">Explorar</a></li>
       </ul>
     </nav>
   );

@@ -10,7 +10,7 @@ export default function Home() {
     <main className="relative min-h-screen flex flex-col items-center justify-between p-8 bg-gray-100">
       <HeaderMenu />
 
-      <div className="grid grid-cols-2 gap-6 w-full max-w-6xl mt-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-6xl mt-16">
         <BlockTopLeft />
         <BlockTopRight />
         <BlockBottomLeft />
