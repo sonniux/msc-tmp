@@ -1,32 +1,23 @@
-import Header from "@/components/Header";
+import HeaderMenu from "@/components/HeaderMenu";
+import BlockTopLeft from "@/components/BlockTopLeft";
+import BlockTopRight from "@/components/BlockTopRight";
+import BlockBottomLeft from "@/components/BlockBottomLeft";
+import BlockBottomRight from "@/components/BlockBottomRight";
 import Footer from "@/components/Footer";
-import Menu from "@/components/Menu";
-import Block1 from "@/components/Block1";
-import Block2 from "@/components/Block2";
-import Block3 from "@/components/Block3";
-import Block4 from "@/components/Block4";
 
 export default function Home() {
   return (
-    <>
-      <Header />
-      <Menu /> {/* 👈 Menú en esquina */}
-      <main
-        style={{
-          display: "grid",
-          gridTemplateColumns: "1fr 1fr",
-          gridTemplateRows: "1fr 1fr",
-          gap: "1rem",
-          padding: "1rem",
-          minHeight: "70vh"
-        }}
-      >
-        <Block1 />
-        <Block2 />
-        <Block3 />
-        <Block4 />
-      </main>
+    <main className="relative min-h-screen flex flex-col items-center justify-between p-8 bg-gray-100">
+      <HeaderMenu />
+
+      <div className="grid grid-cols-2 gap-6 w-full max-w-6xl mt-12">
+        <BlockTopLeft />
+        <BlockTopRight />
+        <BlockBottomLeft />
+        <BlockBottomRight />
+      </div>
+
       <Footer />
-    </>
+    </main>
   );
 }
