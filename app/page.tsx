@@ -6,7 +6,6 @@ import Footer from "@/components/Footer/Footer";
 export default function Home() {
   return (
     <main className="min-h-screen flex flex-col">
-      <Header />
       <StatsTop />
       <EventsBottom />
       <Footer />
