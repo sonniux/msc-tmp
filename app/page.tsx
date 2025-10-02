@@ -1,22 +1,14 @@
-import HeaderMenu from "@/components/HeaderMenu";
-import BlockTopLeft from "@/components/BlockTopLeft";
-import BlockTopRight from "@/components/BlockTopRight";
-import BlockBottomLeft from "@/components/BlockBottomLeft";
-import BlockBottomRight from "@/components/BlockBottomRight";
-import Footer from "@/components/Footer";
+import Header from "@/components/Header/Header";
+import StatsTop from "@/components/StatsTop/StatsTop";
+import EventsBottom from "@/components/EventsBottom/EventsBottom";
+import Footer from "@/components/Footer/Footer";
 
 export default function Home() {
   return (
-    <main className="relative min-h-screen flex flex-col items-center justify-between p-8 bg-gray-100">
-      <HeaderMenu />
-
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-6xl mt-16">
-        <BlockTopLeft />
-        <BlockTopRight />
-        <BlockBottomLeft />
-        <BlockBottomRight />
-      </div>
-
+    <main className="min-h-screen flex flex-col">
+      <Header />
+      <StatsTop />
+      <EventsBottom />
       <Footer />
     </main>
   );
