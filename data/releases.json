@@ -1,17 +1,17 @@
 [
   {
     "id": 1,
-    "title": "Nuevo álbum rompe récords",
+    "title": "Nuevo álbum",
     "summary": "Un artista emergente logra millones de reproducciones en 24 horas."
   },
   {
     "id": 2,
-    "title": "Festival confirmado",
+    "title": "Evento más grande de música",
     "summary": "El evento de música más grande de la región ya tiene fechas oficiales."
   },
   {
     "id": 3,
-    "title": "Colaboración inesperada",
+    "title": "Último lanzamiento",
     "summary": "Dos grandes artistas anuncian un tema en conjunto."
   }
 ]
