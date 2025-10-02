@@ -1,4 +1,4 @@
-export default function ContactoPage() {
+export default function ContactPage() {
   return (
     <main style={{ padding: "1rem" }}>
       <h1>Contacto</h1>
