@@ -2,7 +2,8 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { Menu, X } from "lucide-react"; // Iconos modernos
+import { Menu, X } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -41,38 +42,46 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Menú desplegable en móviles */}
-      {isOpen && (
-        <ul className="mt-4 flex flex-col space-y-4 md:hidden">
-          <li>
-            <Link
-              href="/"
-              className="block hover:text-blue-500 transition-colors"
-              onClick={() => setIsOpen(false)}
-            >
-              Inicio
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/about"
-              className="block hover:text-blue-500 transition-colors"
-              onClick={() => setIsOpen(false)}
-            >
-              Sobre mí
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/contact"
-              className="block hover:text-blue-500 transition-colors"
-              onClick={() => setIsOpen(false)}
-            >
-              Contacto
-            </Link>
-          </li>
-        </ul>
-      )}
+      {/* Menú desplegable en móviles con animación */}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.ul
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.3 }}
+            className="mt-4 flex flex-col space-y-4 md:hidden"
+          >
+            <li>
+              <Link
+                href="/"
+                className="block hover:text-blue-500 transition-colors"
+                onClick={() => setIsOpen(false)}
+              >
+                Inicio
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/about"
+                className="block hover:text-blue-500 transition-colors"
+                onClick={() => setIsOpen(false)}
+              >
+                Sobre mí
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/contact"
+                className="block hover:text-blue-500 transition-colors"
+                onClick={() => setIsOpen(false)}
+              >
+                Contacto
+              </Link>
+            </li>
+          </motion.ul>
+        )}
+      </AnimatePresence>
     </nav>
   );
 }
